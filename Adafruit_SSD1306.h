@@ -205,6 +205,6 @@ protected:
 #endif
 };
 
-extern Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
+extern Adafruit_SSD1306 display;
 
 #endif // _Adafruit_SSD1306_H_
