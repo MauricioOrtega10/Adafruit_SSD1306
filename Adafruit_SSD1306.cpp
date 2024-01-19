@@ -1183,3 +1183,5 @@ void Adafruit_SSD1306::dim(bool dim) {
   ssd1306_command1(dim ? 0 : contrast);
   TRANSACTION_END
 }
+
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);

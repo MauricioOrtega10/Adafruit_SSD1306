@@ -43,6 +43,8 @@ typedef class HardwareSPI SPIClass;
 #include <SPI.h>
 #include <Wire.h>
 
+#include <DisplayConfig.h>
+
 #if defined(__AVR__)
 typedef volatile uint8_t PortReg;
 typedef uint8_t PortMask;
@@ -145,7 +147,7 @@ public:
 
   ~Adafruit_SSD1306(void);
 
-  bool begin(uint8_t switchvcc = SSD1306_SWITCHCAPVCC, uint8_t i2caddr = 0,
+  bool begin(uint8_t switchvcc = SSD1306_SWITCHCAPVCC, uint8_t i2caddr = I2C_ADDRESS,
              bool reset = true, bool periphBegin = true);
   void display(void);
   void clearDisplay(void);
@@ -202,5 +204,7 @@ protected:
   SPISettings spiSettings;
 #endif
 };
+
+extern display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 #endif // _Adafruit_SSD1306_H_
