@@ -6,7 +6,7 @@
 #define SCREEN_WIDTH    128 // OLED width,  in pixels
 #define SCREEN_HEIGHT   64 // OLED height, in pixels
 #define RESET_PIN       -1
-#define I2C_ADDRESS 	0x3C
+#define DISPLAY_I2C_ADDRESS 	0x3C
 #define national_byte_width  128
 #define national_byte_height 64
 

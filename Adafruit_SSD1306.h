@@ -147,7 +147,7 @@ public:
 
   ~Adafruit_SSD1306(void);
 
-  bool begin(uint8_t switchvcc = SSD1306_SWITCHCAPVCC, uint8_t i2caddr = I2C_ADDRESS,
+  bool begin(uint8_t switchvcc = SSD1306_SWITCHCAPVCC, uint8_t i2caddr = DISPLAY_I2C_ADDRESS,
              bool reset = true, bool periphBegin = true);
   void display(void);
   void clearDisplay(void);
